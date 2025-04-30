@@ -1,6 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -18,10 +17,9 @@ const Header = () => {
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="ml-3">
-            {/* <Logo /> */}
             <Image alt={siteMetadata.headerTitle}
               src="/static/images/logo.png"
-              className="object-cover object-center "
+              className="object-cover object-center"
               width={52}
               height={52} />
           </div>
