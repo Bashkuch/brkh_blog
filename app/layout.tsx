@@ -12,6 +12,9 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
+import localFont from 'next/font/local'
+const main_font = localFont({ src: './fonts/modam/WOFF/ModamWeb-Medium.woff' })
+
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
@@ -64,7 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${space_grotesk.variable} scroll-smooth`}
+      dir="rtl"
+      // className={`${space_grotesk.variable} scroll-smooth`}
+      className={`${main_font.className} scroll-smooth`}
       suppressHydrationWarning
     >
       <link
