@@ -20,7 +20,7 @@ const Header = () => {
           <div className="ml-3">
             {/* <Logo /> */}
             <Image alt={siteMetadata.headerTitle}
-              src='/static/images/logo.png'
+              src="/static/images/logo.png"
               className="object-cover object-center "
               width={52}
               height={52} />
