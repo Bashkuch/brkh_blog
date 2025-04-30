@@ -24,7 +24,6 @@ const siteMetadata = {
   bluesky: 'https://bsky.app/profile/brkh',
   locale: 'fa-IR',
 
-
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {
