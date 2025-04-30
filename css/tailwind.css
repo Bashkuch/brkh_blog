@@ -173,8 +173,8 @@ input:-webkit-autofill:focus {
 
 .content-header-link {
   opacity: 0;
-  margin-left: -24px;
-  padding-right: 4px;
+  margin-right: -24px;
+  padding-left: 4px;
 }
 
 .content-header:hover .content-header-link,
