@@ -6,9 +6,9 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'About' })
 
-// This function receives params from the dynamic route, and we need to await it
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = await params // Await the params to resolve it
+// This function receives params from the dynamic route and does not require awaiting
+export default function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params  // No need to await params
 
   // Find the author by slug
   const author = allAuthors.find((author) => author.slug === slug)
