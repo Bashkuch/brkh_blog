@@ -14,6 +14,7 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
   const params = await props.params
   const tag = decodeURI(params.tag)
+  console.log(tag, params.tag)
   return genPageMetadata({
     title: tag,
     description: `${siteMetadata.title} ${tag} tagged content`,
@@ -29,6 +30,7 @@ export async function generateMetadata(props: {
 export const generateStaticParams = async () => {
   const tagCounts = tagData as Record<string, number>
   const tagKeys = Object.keys(tagCounts)
+  console.log(2, "tagCounts", tagCounts, "tagKeys", tagKeys)
   return tagKeys.map((tag) => ({
     tag: encodeURI(tag),
   }))
