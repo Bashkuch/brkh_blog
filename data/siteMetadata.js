@@ -1,28 +1,29 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  title: 'برکه | Brkh',
+  author: 'برکه',
+  headerTitle: 'برکه',
+  description: 'پلتفرم معرفی کلاس‌ها، دوره‌های آموزشی و مکان‌های مفید، فرهنگی و تفریحی در شهر زنجان',
+  language: 'fa',
+  theme: 'light', // system, dark or light
+  siteUrl: 'https://brkh.ir',
+  siteRepo: 'https://github.com/bashkuch/brkh_blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
-  locale: 'en-US',
+  mastodon: 'https://mastodon.social/@brkh',
+  email: 'info@brkh.ir',
+  github: 'https://github.com/yourusername',
+  x: 'https://twitter.com/brkh',
+  // twitter: 'https://twitter.com/brkh',
+  facebook: 'https://facebook.com/brkh',
+  youtube: 'https://youtube.com/@brkh',
+  linkedin: 'https://www.linkedin.com/in/brkh',
+  threads: 'https://www.threads.net/@brkh',
+  instagram: 'https://www.instagram.com/brkh',
+  medium: 'https://medium.com/@brkh',
+  bluesky: 'https://bsky.app/profile/brkh',
+  locale: 'fa-IR',
+
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {
@@ -81,7 +82,7 @@ const siteMetadata = {
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
-      lang: 'en',
+      lang: 'fa',
     },
   },
   search: {
