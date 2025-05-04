@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'برکه | Brkh',
   author: 'برکه',
   headerTitle: 'برکه',
-  description: 'وبلاگ اقتصادی برکه با استفاده از Next.js و Tailwind CSS',
+  description: 'پلتفرم معرفی کلاس‌ها، دوره‌های آموزشی و مکان‌های مفید، فرهنگی و تفریحی در شهر زنجان',
   language: 'fa',
   theme: 'light', // system, dark or light
   siteUrl: 'https://brkh.ir',
