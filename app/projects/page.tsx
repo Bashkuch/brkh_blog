@@ -4,6 +4,11 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
+/**
+ * Renders a page displaying a list of project cards with a Persian title and description.
+ *
+ * Each card presents information about a project, including its title, description, image, and link, sourced from the `projectsData` array.
+ */
 export default function Projects() {
   return (
     <>

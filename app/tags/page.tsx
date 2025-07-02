@@ -6,6 +6,11 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Tags', description: 'Things I blog about' })
 
+/**
+ * Renders a page displaying all blog tags with their associated post counts.
+ *
+ * Shows a heading in Persian ("برچسب ها") and lists each tag as a styled container with a link to the tag's page and the number of posts for that tag. If no tags are available, displays a message indicating no tags were found.
+ */
 export default async function Page() {
   const tagCounts = tagData as Record<string, number>
   const tagKeys = Object.keys(tagCounts)

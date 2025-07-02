@@ -2,6 +2,11 @@ import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 
+/**
+ * Renders the website footer with social media icons, author and site information, and an attribution link.
+ *
+ * The footer includes a row of social media icons, the author's name, the current year, the site title linked to the homepage, and a link attributing the site to its creator.
+ */
 export default function Footer() {
   return (
     <footer>

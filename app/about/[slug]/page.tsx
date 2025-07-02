@@ -12,7 +12,13 @@ import AuthorLayout from '@/layouts/AuthorLayout'
 import { coreContent } from 'pliny/utils/contentlayer'
 import { genPageMetadata } from 'app/seo'
 
-// (Optional) generate metadata per author page
+/**
+ * Generates dynamic metadata for an author page based on the provided slug.
+ *
+ * If the author is not found, returns an empty metadata object.
+ *
+ * @returns Metadata object containing the author's name as the title and a description referencing the author, or an empty object if no author matches the slug.
+ */
 export async function generateMetadata(
   props: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
@@ -27,14 +33,22 @@ export async function generateMetadata(
   })
 }
 
-// 1️⃣ Emit all author slugs for static export
+/**
+ * Generates a list of route parameters for all authors to enable static generation of author pages.
+ *
+ * @returns An array of objects, each containing a `slug` property for an author.
+ */
 export async function generateStaticParams() {
   return allAuthors.map((author) => ({
     slug: author.slug,
   }))
 }
 
-// 2️⃣ Page component awaits `props.params` and renders the author
+/**
+ * Renders an author page based on the provided slug parameter.
+ *
+ * Retrieves the author data corresponding to the slug, triggers a 404 page if not found, and displays the author's content using the appropriate layout and MDX renderer.
+ */
 export default async function Page(
   props: { params: Promise<{ slug: string }> }
 ) {

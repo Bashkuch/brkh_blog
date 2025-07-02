@@ -8,6 +8,11 @@ interface Props {
   content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
 
+/**
+ * Renders an author profile layout with avatar, personal details, social links, and custom content.
+ *
+ * Displays the author's name, occupation, company, and social media links alongside the provided children content in a responsive grid layout.
+ */
 export default function AuthorLayout({ children, content }: Props) {
   const { name, avatar, occupation, company, email, twitter, bluesky, linkedin, github } = content
 

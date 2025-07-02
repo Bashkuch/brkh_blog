@@ -61,6 +61,13 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Root layout component that sets up global HTML structure, metadata, fonts, theming, analytics, and context providers for the application.
+ *
+ * Wraps all page content with consistent layout, styling, and providers, and configures the document for right-to-left languages.
+ *
+ * @param children - The page content to be rendered within the layout
+ */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const basePath = process.env.BASE_PATH || ''
 
